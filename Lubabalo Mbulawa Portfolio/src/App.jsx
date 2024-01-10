@@ -24,7 +24,7 @@ const Portfolio = () =>{
           <p>Based in Cape Town, I'm a Junior Front-end developer<br/> passionate about building accessible web apps that users love.</p>
         </div>
         <div className="profile__pic">
-         <img src={portfolioImage} alt=""/>
+         <img src={portfolioImage} alt="" className="profile__pic"/>
         </div>
         <div></div>
       </div>
@@ -57,6 +57,9 @@ const Portfolio = () =>{
             {project.name}
             <div className="projects--links">
               <a href={project.github} target="_blank">Github</a>
+            </div>
+            <div className="project--image">
+              <img src={project.image} alt={project.name} className="project--image"></img>
             </div>
           </div>
         ))}

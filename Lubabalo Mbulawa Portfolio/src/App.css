@@ -1,6 +1,7 @@
 .container{
-  width: 607px;
-  height: 829px;
+  font: 1em sans-serif;
+  width: 657px;
+  height: 100%;
   margin: auto;
   margin-top: 55px;
   border-radius: 12px;
@@ -24,11 +25,13 @@
 
 .profile__pic{
   width: 10px;
-}
+  width: 120px;
+  border-radius: 13px;
+}/*
 img{
   width: 120px;
   border-radius: 13px;
-}
+}*/
 
 .hearder--two{
   display: flex;
@@ -64,17 +67,25 @@ img{
 .project--list{
   display: flex;
   gap: 20px;
+  flex: 0 0 auto;
+
 }
 
 .each--project{
-  width: 300px;
-  height: 200px;
+  width: 150px;
   border-radius: 12px;
   padding: 10px;
   background-color: yellowgreen;
 }
 
-.projects--links{
-  background-color: yellowgreen;
+.projects--links :hover{
+  background: rgb(221, 221, 220);
+  padding: 3px;
+  border-radius: 5px;
   margin-bottom: 10px;
+}
+
+.project--image{
+  margin-top: 10px;
+  width: 100%;
 }
