@@ -3,7 +3,7 @@
   width: 657px;
   height: 100%;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 10px;
   border-radius: 12px;
   color: rgb(7, 7, 7);
   background-image: linear-gradient(180deg, #f5f5f8 0%, #eae9f0cc 100%);
@@ -27,11 +27,7 @@
   width: 10px;
   width: 120px;
   border-radius: 13px;
-}/*
-img{
-  width: 120px;
-  border-radius: 13px;
-}*/
+}
 
 .hearder--two{
   display: flex;
@@ -55,14 +51,9 @@ img{
 .footer{
   display: flex;
   margin: 30px;
+  padding-bottom: 20px;
 }
-/*
-.links{
-  background-color: rgb(224, 224, 223);
-  border-radius: 10px;
-  padding: 5px;
-}
-*/
+
 
 .project--list{
   display: flex;
@@ -72,10 +63,11 @@ img{
 }
 
 .each--project{
-  width: 150px;
+  width: 190px;
   border-radius: 12px;
   padding: 10px;
-  background-color: yellowgreen;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .projects--links :hover{
@@ -88,4 +80,78 @@ img{
 .project--image{
   margin-top: 10px;
   width: 100%;
+}
+
+/*------LOADER------*/
+
+.loader {
+  display: block;
+  --height-of-loader: 4px;
+  --loader-color: #0071e2;
+  width: 100%;
+  height: var(--height-of-loader);
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.loader::before {
+  content: "loading";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+  ;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
+
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 600px) {
+  .hearder--one {
+    flex-direction: column;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__pic {
+    margin-top: 10px;
+  }
+
+  .hearder--two,
+  .footer {
+    margin: 10px;
+  }
+
+  .skills,
+  .project--list {
+    margin: 10px;
+  }
+
+  .each--project,
+  .projects--links:hover {
+    margin-bottom: 5px;
+  }
+
+  .footer {
+    text-align: center;
+  }
 }

@@ -1,49 +1,84 @@
-import React from "react";
-import "./App.css"
-import portfolioImage from "../src/images/portfolio_pic.jpg"
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import portfolioImage from "../src/images/portfolio_pic.jpg";
 import { Projects } from "./data";
+import Certificates from "./certificate";
+
 
 const Portfolio = () =>{
+
+  const [loading, setloading] = useState(true);
+  const [showCertificates, setShowCertificates] = React.useState(false);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setloading(false);
+    },1000);
+  }, []);
+  
+  const handleclick = () => {
+    setloading(true);
+    
+    setTimeout(()=>{
+      setloading(false);
+      setShowCertificates(true);
+    }, 1000);
+  };
+
   return (
     <div className="container">
+      {loading ? (
+        <div className="loader"></div>
+      ) : (
+      <div>
+      {showCertificates ? (
+        <Certificates />
+      ) : (
+        <>
+
+        
 
       <div className="hearder--one">
         <div className="name">
-          Lubabalo Mbulawa
+          <h3>Lubabalo Mbulawa</h3>
         </div>
         <div className="links">
           <a href="https://www.linkedin.com/in/lubabalo-mbulawa-683237184/" target="_blank">LinkedIn</a>
           <a href="https://github.com/lubabalo006/lubabalo006.git" target="_blank">Github</a>
+          <div onClick={handleclick}> Certificate</div>
         </div>
       </div>
 
       <div className="hearder--two">
         <div>
-          <h2>Hi, nice to meet you!</h2>
+          <h2>Hi 👋, nice to meet you!</h2>
           <h2>I'm Lubabalo Mbulawa.</h2>
-          <p>Based in Cape Town, I'm a Junior Front-end developer<br/> passionate about building accessible web apps that users love.</p>
+          <p>Based in Cape Town, I'm a Junior Front-end developer<br/>
+           passionate about building accessible web apps that users love. <br/>I am a firm believer in the power of teamwork to deliver outstanding results.</p>
         </div>
+        
         <div className="profile__pic">
          <img src={portfolioImage} alt="" className="profile__pic"/>
         </div>
         <div></div>
       </div>
-      <div className="contact">contact me</div>
       
       <hr />
 
       <div className="skills">
         <div>
-          <h3>HTML</h3>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+        </div>
+        
+        <div>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+        </div>
+        
+        <div>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
         </div>
         <div>
-          <h3>CSS</h3>
-        </div>
-        <div>
-          <h3>Javascript</h3>
-        </div>
-        <div>
-          <h3>React</h3>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
         </div>
       </div>
 
@@ -90,7 +125,10 @@ const Portfolio = () =>{
           </form>
         </div>
       </div>
-
+      </>
+    )}
+    </div>
+    )}
     </div>
   )
 }

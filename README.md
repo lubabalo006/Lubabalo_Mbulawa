@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Lubabalo Mbulawa</h1>
-<h3 align="center">Junior Software developer</h3>
+<h3 align="center">Junior Front-end developer</h3>
  
 ## About me :
-I'm a junior software developer passionate about crafting clean, efficient, and innovative code. I believe that software development is not just about writing lines of code but solving real-world problems and creating user-centric solutions.
+I'm a junior Front-end developer passionate about crafting clean, efficient, and innovative code. I believe that software development is not just about writing lines of code but solving real-world problems and creating user-centric solutions.
 I am a firm believer in the power of teamwork to deliver outstanding results.
 
 
