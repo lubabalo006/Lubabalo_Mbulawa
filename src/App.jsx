@@ -45,7 +45,7 @@ const Portfolio = () =>{
         <div className="links">
           <a href="https://www.linkedin.com/in/lubabalo-mbulawa-683237184/" target="_blank">LinkedIn</a>
           <a href="https://github.com/lubabalo006/lubabalo006.git" target="_blank">Github</a>
-          <div onClick={handleclick}> Certificate</div>
+          <div onClick={handleclick}> Certificates</div>
         </div>
       </div>
 
