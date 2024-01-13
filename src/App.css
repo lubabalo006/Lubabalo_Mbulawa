@@ -229,7 +229,7 @@ iframe{
   width: 100%;
   padding: 5px;
   border-radius: 8px;
-  color: #fff;
+  color: black;
   font-family: inherit;
   background-color: transparent;
   border: 1px solid #414141;
@@ -240,7 +240,7 @@ iframe{
   padding: 5px;
   border-radius: 8px;
   resize: none;
-  color: #fff;
+  color: black;
   height: 96px;
   border: 1px solid #414141;
   background-color: transparent;
