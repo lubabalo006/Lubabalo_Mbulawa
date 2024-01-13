@@ -91,7 +91,7 @@ const Portfolio = () =>{
           <div className="each--project">
             {project.name}
             <div className="projects--links">
-              <a href={project.github} target="_blank">Github</a>
+              <a href={project.github} target="_blank">Github link</a>
             </div>
             <div className="project--image">
               <img src={project.image} alt={project.name} className="project--image"></img>
@@ -119,6 +119,7 @@ const Portfolio = () =>{
             <label for="email">Email</label>
             <input type="email" name="email" id="" placeholder="" required></input>  
             <br></br>
+            <label for="Message">Message</label>
             <textarea name="Message" id="text" cols="30" rows="10" placeholder="Enter message here (optional)."></textarea>
             <br></br>
             <input class="submit" type="submit" value="send"></input>
