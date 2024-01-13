@@ -2,6 +2,7 @@ import React from "react";
 import Portfolio from "./App";
 import "./certificate.css"
 import "./App.css"
+import { credentials } from "./data";
 
 const Certificates = () =>{
 
@@ -18,7 +19,16 @@ const Certificates = () =>{
         <>
             <button onClick={handleclick}>back</button>
             <div>
-                <iframe src="src\certificates\LUBMBU219 Lubabalo Mbulawa_CodeSpaceCertificate-merged.pdf" width="98%" height="600px"></iframe>
+                {credentials.map((credential) =>(
+                    <div className="credential">
+                        <h4>{credential.organization}</h4>
+                            {credential.name}
+                            <div className="credential--links">
+                                <a href={credential.url} target="_blank">Show credential</a>
+                            </div>
+                        
+                    </div>
+                    ))}
             </div>
         </>
         )}

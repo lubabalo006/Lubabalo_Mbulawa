@@ -16,3 +16,20 @@ export const Projects = [
 }
 ]
 
+export const credentials = [
+    {
+        "organization": "CodeSpace",
+        "name": "Javascript fundamental",
+        "url": "https://www.linkedin.com/in/lubabalo-mbulawa-683237184/overlay/1705152144148/single-media-viewer/?profileId=ACoAACt1_gMBfZInXCOHsre_RMNBsan3XrEWkyQ"
+    },
+    {
+        "organization": "Le Wagon",
+        "name": "Intro to Python",
+        "url": "https://app.lewagon.school/certificates/qhidpjmlk0"
+    },
+    {
+        "organization": "Sololearn",
+        "name": "Python Intermediate",
+        "url": "https://www.linkedin.com/in/lubabalo-mbulawa-683237184/details/certifications/1635555286849/single-media-viewer/?profileId=ACoAACt1_gMBfZInXCOHsre_RMNBsan3XrEWkyQ"
+    }
+]
