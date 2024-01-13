@@ -1,5 +1,7 @@
 import React from "react";
 import Portfolio from "./App";
+import "./certificate.css"
+import "./App.css"
 
 const Certificates = () =>{
 
@@ -9,14 +11,14 @@ const Certificates = () =>{
         setShowPortfolio(true);
     }
     return(
-        <div>
+        <div className="container">
             {showPortfolio ? (
         <Portfolio />
         ) : (
         <>
             <button onClick={handleclick}>back</button>
             <div>
-                <iframe src="src\certificates\LUBMBU219 Lubabalo Mbulawa_CodeSpaceCertificate-merged.pdf" width="100%" height="500px"></iframe>
+                <iframe src="src\certificates\LUBMBU219 Lubabalo Mbulawa_CodeSpaceCertificate-merged.pdf" width="98%" height="600px"></iframe>
             </div>
         </>
         )}

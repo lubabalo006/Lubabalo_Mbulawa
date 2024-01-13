@@ -45,7 +45,7 @@ const Portfolio = () =>{
         <div className="links">
           <a href="https://www.linkedin.com/in/lubabalo-mbulawa-683237184/" target="_blank">LinkedIn</a>
           <a href="https://github.com/lubabalo006/lubabalo006.git" target="_blank">Github</a>
-          <div onClick={handleclick}> Certificates</div>
+          <a onClick={handleclick}> Certificates</a>
         </div>
       </div>
 
@@ -111,7 +111,7 @@ const Portfolio = () =>{
           <h2>Contact</h2>
           <p>I would love to hear your feedback about my projects and how I can improve. Please feel free to fill in the form.</p>
         </div>
-        <div className="form">
+        <div className="form-container">
           <form action="https://formsubmit.co/lmbulawa4@gmail.com" method="post">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" required></input>
