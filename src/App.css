@@ -160,10 +160,10 @@ a:hover {
     flex-direction: column;
   }
 
-  .links {
+  /*.links {
     flex-direction: column;
     align-items: center;
-  }
+  }*/
 
   .profile__pic {
     margin-top: 10px;
